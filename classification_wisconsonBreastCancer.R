@@ -1,11 +1,6 @@
+# Advanced Analytics - Classification
 
-# Student Name: Darren Rowland
-# Student No:   40350685
-
-# Advanced Analytics Assignment 2 - Classification
-
-#######################################
-######################
+#############################################################
 
 # Use Wisconsin Brest Cancer dataset in order to make predictions
 # on the diagnosis of patient breats cancer based on Fine Needle
@@ -13,7 +8,7 @@
 
 #############################################################
 
-setwd("F:/!MSc Business Analytics/MGT7179 Advanced Analytics and Machine Learning/Assignement 2 Classification")
+setwd("F:/Advanced Analytics and Machine Learning/Assignement 2 Classification")
 getwd()
 
 install.packages("pacman")
