@@ -32,7 +32,7 @@ Packages
 ## Introduction
 This analysis examines the predictive accuracy of five advanced analytics and machine learning (ML) algorithms on the publicly available and popular ‘Breast Cancer Wisconsin (Diagnostic)’ dataset. Models will be developed using Logistic Regression, Discriminant Analysis, Ensemble, Support Vector Machines (SVM) and Neural Network. The dataset developed consists of features from digitized images taken from real life tests on breast mass using Fine Needle Aspiration (FNA) and are descriptive characteristics of cell nuclei existing in the image. The dataset partitioned into Train/Test dataset with 80/20% partitioning. Results show high accuracy with Neural Network 97% and linear discriminant analysis 96.5% but the other models fell short of expectations for the prediction with logistic regression results at 61%.
 
-2.0	Literature Review
+## Literature Review
 According to the World Health organisation (WHO) almost 10 million deaths in 2020 were as a result of cancer, a statistic of 1 in 6 deaths. Most common occurrence of cancer variant in new cases of the world’s population in 2020 was breast cancer with 2.26 million cases, closely followed by lung cancer then colon and rectum to make up the top 3 most common cases (WHO, 2022). In 2015 breast cancer was the most common cancer to kill women globally.
 In the UK alone there were 55,920 cases of breast cancer of which 11,547 deaths between 2016 and 2018 an astonishing 20.7% (Cancer Research, 2022), notably the numbers are extremely higher in females than males.
 The burden that breast cancer has on medical treatment and finances globally is catastrophic with an estimated cost of US$1.16 trillion in 2010, given that 30-50% could be avoided through lifestyle decisions and greater public health measures.
@@ -44,8 +44,8 @@ Park et al. (2013) in their literature highlight various studies of prominent ma
 Rosado et al. (2013) aim from their study to find; based on use of a SVM classifier algorithm,  an intelligent, efficient model for accurate prognosis prediction in oral squamous cell carcinoma (OSCC) patients while evaluating the model by discriminant analysis. OSCC a life threatening disease with survival rates of between 50% and 60% over 5 years prior to 2013. Outlining how SVM has the flexibility and ability to provide high accuracy while dealing with high dimensional data. They aim to find patterns in the data for patients’ survivability while also producing a highly predictive model with relevant variables identified. Data was gathered from 69 OSCC suffering patients, selected randomly. They highlight how rates of classification were 97.56% and 100% for living and deceased patients with a 98.55% overall classification rate illustrates the ability of SVM to improve the error caused by excessive quantities of variables.
 Lu et al. (2020) investigate in their study the ability to accurately predict ovarian cancer (OC), a major cause of death in women with 184,799 recorded deaths in 2018. A chemo sensitive cancer that show initial efficacy, unfortunately recurrence rates rose from 60% to 80% with greater recurrence percentages recorded for higher stages. Currently clinical testing for diagnosing OC is by a small quantity of biomarkers in gene/protein criteria or epidemiological evidence, though ML advances and ability to handle high dimensional data can prove an accurate model for prediction. Their study focuses on data from 349 patients with 49 measures with result accuracies of 87.2%, 84.7% and 79.6% for Decision Tree, Logistic Regression and Risk Ovarian Malignancy Algorithm (ROMA) respectively.
  
-3.0	Methodology
-3.1	Subset Selection
+##	Methodology
+##	Subset Selection
 One of the most critical operations of pre-processing of the data is subset selection which identifies the attributes or features that make the highest meaningful contribution to the machine learning activity. The role of subset selection is used when hundreds or even thousands of attributes or variables exist in the dataset which is referred to as high dimensional data which can be a challenge for machine learning algorithms to deal with and handle the data. With high dimensional data a high quantity of computational power and greater amounts of time required, along with this a model with a lot of features can be very difficult to understand.
 Given the issues outlined regarding high dimensional data it is therefore necessary to subset features within the dataset instead of working with the full set. Reasons to reduce the dimensionality of the data can include:
 1.	Faster and less costly
@@ -56,7 +56,7 @@ a.	Best subset selection – this selection method is based on comparing all mod
 b.	Forward and backward stepwise selection – with large quantities of predictors the best subset method becomes unfeasible and statistically risky, it can take a large amount of time to compute and overfitting can occur. When this is the case forward and backward stepwise selection can be used.
 This study will use best subset selection to obtain best performing features from the data which will then be used to develop accurate models using various machine learning techniques.
 
-3.2	Logistic Regression
+##	Logistic Regression
 This is a classification modelling technique that predicts the probability that a binary response Y belongs to a certain category instead of directly modelling the response Y. In below Figure, the left hand panel illustrates the result of direct modelling of Y as the result similar to the result if linear regression with results outside of [0, 1] interval. However when Y is predicted to belong to a particular category the results are of that Logistic Regression prediction can be seen in below Figure right hand panel. Thresholds can be set for each predicted result for class selection.
 Logistic regression can be categorised into different types:
 1.	Binary Logistic Regression – a categorical 2 possible outcome response
@@ -67,7 +67,7 @@ This study will look at binary logistic regression in order to classify the FNA 
  
 Figure: Modelling of dependent variable using Linear (left) and Logistic (right) regression
 
-3.3	Linear Discriminant Analysis
+##	Linear Discriminant Analysis
 Similar to Logistic Regression when distribution is assumed normal though and more accurate when sample sizes are small. It is a dimensionality reduction technique and as LR suffers from instability when substantial separation exists between both classes, Discriminant Analysis does not suffer from the same issues. It can be used to reduce the feature count in pre-processing stages of data analysis and reduces computing cost significantly.
 Discriminant functions can be roughly categorised into three classes:
 1.	Distance-based
@@ -79,7 +79,7 @@ It is used in medical applications to classify a patient’s disease status base
 
 
  
-3.4	Ensemble
+##	Ensemble
 The ensemble idea is combining a collection of simpler model strengths. Various classification ensemble methods include Bagging, Random Forests and Boosting. 
 
 3.5	Support Vector Machines (SVM)
@@ -89,7 +89,7 @@ The dimension of this feature space can get very large and in some instances inf
 Key properties for a separating hyperplane is that it is furthest from the data meaning the boundaries between two data classes are as far apart as possible ensuring that small changes in the data reduces the likelihood of changing the value of the classifier. 
  		 
 
-3.6	Neural Network
+##	Neural Network
 The heart of Deep Learning, Neural Networks first came about in the 1940s when proposed by Warren McCullough and Walter Pitts (University of Chicago researchers) Hardesty (2017). Initially they brought major attention from computer science and neuroscience before losing popularity. Now with increased computational processing power have seen a major resurgence.
 The name comes from the mimicking of the human brains biological neurons which sends signals to each other. They’re compromised of layers, input layer, hidden layers and output layer (see Figure below). The nodes are activated if the output from the previous node has met a specified threshold value and the data is then sent to the next network layer. Otherwise the layer stops and data does not get passed on. 
 
@@ -98,7 +98,7 @@ Figure: Artificial Neural Network Architecture (IBM 2020)
 
 They have a reliance on training data in order to learn and over time improve their accuracy, once fine-tuned they become powerful tools in artificial intelligence and machine learning enabling with high velocity the classifying and clustering of data.
  
-4.0	Data Exploration & Descriptive Statistics
+##	Data Exploration & Descriptive Statistics
 The dataset supplied via .csv file is concerned with generated features computed from images of fine needle aspiration (FNA). The dataset consists of 569 observations and 32 variables, within this dataset the diagnosis feature recorded 357 benign and 212 malignant cancer observations. All features were recorded with 4 significant digits and there are no missing values within the data. When imported into R Studio the dataset consists of 568 observations and 33 variables. The below table outlines the variables and their respective classes.
  
 Table: Dataset Variable Classification
@@ -111,14 +111,14 @@ To gain an overview of associations between variables and dependent outcome vari
  		 
 Table XX: Chi Sq Test					Table XX: T-Test
 
-4.1	Boxplot
+##	Boxplot
 As an extremely effective way to visualise the data boxplots have the ability to identify features with the data with outliers. This issue can then be invetsgated further and the datapoints can be removed or retained if deemed necessary. The below Figure XX visualises the variables; radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean, concave.points_mean, symmetry_mean, fractal_dimension_mean from the dataset.
  
-4.2	Outliers
+##	Outliers
 The table below highlights the outliers existing the ‘_mean’ variables within the dataset, individually there are not high quantities though these should be converted to NA and observations kept. This will reduce their impact on the model.
  
 
-4.3	Pairwise Scatter Plot
+##	Pairwise Scatter Plot
 The figures below illustrate correlations in pairwise fashion between the features radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean, concave.points_mean, symmetry_mean, fractal_dimension_mean from the dataset. It is very visible from the plots that some data are highly correlated which is a cause for concern due to multicollinearity in the data.
   
  
@@ -137,8 +137,8 @@ Figure: Summary of dataset with removed outliers
  
 By using the regsubset() function the best variables models can be determined and as shown below, each top row contains a square of black for each selected variable according to the associated statistics for the optimal model. It is possioble to determine the model with the lowest BIC.
    
-5.0	 Findings 
-5.1	Subset Selection
+##	 Findings 
+##	Subset Selection
 Through subset selection and running the leap() function on the data the models with the minimum Cp in the data include 11 features and they are;  compactness_mean, concavity_mean, radius_se, smoothness_se, concavity_se, radius_worst, texture_worst, area_worst, concave points_worst, symmetry_worst, fractal_dimension_worst.
  
 The plotting of subset selection RSS, adjusted R2 , Cp and BIC illustrates a line model constructed from all the generated models with connected points. The red point on the adjusted RSq plot highlights the maximum value whereas the points on the Cp and BIC plots illustrate the minimum. This is computed through the code and the best model is shown to have 11 variables confirmed through the coded minimum BIC and the maximum adjusted R2.
@@ -146,7 +146,7 @@ The plotting of subset selection RSS, adjusted R2 , Cp and BIC illustrates a lin
  
 
  
-5.2	Logistic Regression
+##	Logistic Regression
 From the LR training model results shown below the confusion matrix demonstrates fair level of accuracy although observations of 4 (1%) & 7 (1.5%) of the data across the entire training set. This might seem very small but taking scaling into account for other datasets the numbers can rise significantly. These values are reflected in the prediction accuracy of 65% on training data which results in a 34.3% training error rate. 
  	 
 Figure: Logistic Regression (train set) confusion matrix (left) & prediction accuracy (right)
@@ -154,7 +154,7 @@ Following on from the trained model on the training dataset this model should be
  	 
 Figure: Logistic Regression (test set) confusion matrix (left) & prediction accuracy (right)
 
-5.3	Linear Discriminant Analysis
+##	Linear Discriminant Analysis
 From the plot of the lda it is possible to identify that the observations are not centred on zero meaning that there is significant differences in the data although similar in possibility that the cancer variable is that of the group (0 , 1).
  
 Figure: Linear Discriminant Analysis Plot
@@ -173,7 +173,7 @@ However by using only the outlined 11 features in the subset selection the model
 
 
  
-5.4	Neural Network
+##	Neural Network
 Training a Neural Network model on the features radius_mean, smoothness_mean, perimeter_se with 1 hidden layer and a threshold value of 0.01 the below results were obtained when training set (left ) and test set (right). Results show 89.2% accuracy for the training dataset and 93.8% accuracy on the training set which are high results.
  		 
 
@@ -184,7 +184,7 @@ When the features outlined the best subset selection; compactness_mean, concavit
 
  		 
  
-6.0	Conclusion
+##	Conclusion
 This study presents a variety of machine learning methods popularly used to develop predictive models and aspired to develop similar models with high predictive accuracy. The topic has been broadly researched and the prediction of patient cancer disease is a very interesting topic of research. While all models within the study don’t perform similarly to those in literature given the time constraints the insights gained are valuable and in a real world application where time may be less scarce the models could be developed further with addition of further features to fine tune the models.
 The notable best performing model was the Neural Network model with 97% accuracy prediction on the test dataset which is a confident accuracy based on this outcome. In second place on the performance was the Linear Discriminant Analysis with 96.5% accuracy on the test dataset and lagging considerably behind is the Logistic Regression with only 61%.
 The results in this study are high and confidence should be taken from this model training. In future to further the analysis an ensemble model should be developed, this had been in the scope for this analysis but with time constraints it needed to be removed.
@@ -192,7 +192,7 @@ The development of modelling medical predictions like this can alleviate a major
 
 
  
-7.0	References
+##	References
 Cancer Research UK (2022). Breast cancer incidence (invasive) statistics [website]. Accessed by: https://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/breast-cancer/incidence-invasive#ref- (Accessed May 2022)
 Clarke, B. S., Fokoué, E. and Zhang, H. H. (2009) Principles and theory for data mining and machine learning. Springer (Springer series in statistics). Available at: https://search.ebscohost.com/login.aspx?direct=true&db=cat02616a&AN=qub.b16601725&site=eds-live&scope=site (Accessed: 15 May 2022).
 Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
@@ -208,7 +208,7 @@ Trevor Hastie, Robert Tibshirani and Jerome Friedman (2009) The Elements of Stat
 WHO (2022). Cancer [website]. Accessed by: https://www.who.int/health-topics/cancer#tab=tab_1 (Accessed May 2022)
 
 
-Appendix 1 : R Code
+## Appendix 1 : R Code
 
 ```
 # Advanced Analytics - Classification
