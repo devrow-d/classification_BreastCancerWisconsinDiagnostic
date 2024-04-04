@@ -82,7 +82,7 @@ It is used in medical applications to classify a patient’s disease status base
 ##	Ensemble
 The ensemble idea is combining a collection of simpler model strengths. Various classification ensemble methods include Bagging, Random Forests and Boosting. 
 
-3.5	Support Vector Machines (SVM)
+##	Support Vector Machines (SVM)
 Support Vector Machine (SVM) first developed by Vapnik and a support vector classifier extension, enlarges the boundary/feature space using kernels to enlarge to maximum separation between closest points of two classes.
 SVM exhibit, as well as nice theoretical properties, exceptionally superior performances on classification tasks and also avoid what is often seen, the curse of 
 The dimension of this feature space can get very large and in some instances infinite which would seem the data would be separable leading to overfitting. However SVM deals with this issue and solves function fitting problems and forms part of a greater class of problems (Hastie et al., 2009 & Clarke et al., 2009 & James et al., 2014).
@@ -123,7 +123,8 @@ The figures below illustrate correlations in pairwise fashion between the featur
   
  
 Figure: Pairwise plots of ‘_mean’ features within the dataset
-4.4	Clean Data
+
+##	Clean Data
 The imported dataset included the  variable ‘id’ and R Studio added another  logical variable ‘….33’ which need to be removed as they serve no purpose in the modelling and could have a negative effect on the outcomes.
 The below Figure visualises the variables as a result of cleaning the data by removing outliers; radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean, concave.points_mean, symmetry_mean, fractal_dimension_mean
  
