@@ -8,7 +8,7 @@
 
 #############################################################
 
-setwd("F:/Advanced Analytics and Machine Learning/Assignement 2 Classification")
+setwd("F:/Advanced Analytics and Machine Learning/Classification")
 getwd()
 
 install.packages("pacman")
