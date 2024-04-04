@@ -1,66 +1,35 @@
-# classification_Breast-Cancer-Wisconsin-Diagnostic-
+# Classification - Breast Cancer Wisconsin Diagnostic
 
-#Pacman allows install all librarys without writing library over and over
-pacman::p_load(data.table, 
-               fixest, 
-               BatchGetSymbols, 
-               finreportr, 
-               ggplot2, 
-               lubridate,
-               readxl,
-               dplyr,
-               tidyverse,
-               extrafont,
-               ggthemes,
-               RColorBrewer,
-               scales)
+Supervised machine learning project to predict cancer diagnosis using the popular Breast Cancer Wisconsin dataset
 
-
-Assignment 2
-
-Classification
-
-
-Darren Rowland
-MSc Business Analytics
-MGT7179 Advanced Analytics & Machine Learning
-Student No: 40350685
-
- 
 Contents
-1.0	Introduction	3
-2.0	Literature Review	3
-3.0	Methodology	5
-3.1	Subset Selection	5
-3.2	Logistic Regression	5
-3.3	Linear Discriminant Analysis	6
-3.4	Ensemble	7
-3.5	Support Vector Machines (SVM)	7
-3.6	Neural Network	7
-4.0	Data Exploration & Descriptive Statistics	9
-4.1	Boxplot	10
-4.2	Outliers	11
-4.3	Pairwise Scatter Plot	11
-4.4	Clean Data	12
-5.0	Findings	14
-5.1	Subset Selection	14
-5.2	Logistic Regression	15
-5.3	Linear Discriminant Analysis	15
-5.4	Neural Network	17
-6.0	Conclusion	18
-7.0	References	19
-Appendix 1 : R Code	20
+* [Introduction](#introduction)
+* [Literature Review](#literature-review)
+* [Methodology](#methodology)
+* [Subset Selection](#subset-selection)
+* [Logistic Regression](#logistic-regression)
+* [Linear Discriminant Analysis](#linear-discriminant-analysis)
+* [Ensemble](#ensemble)
+* [Support Vector Machines (SVM)](#support-vector-machines-SVM)
+* [Neural Network](#neural-network)
+* [Data Exploration & Descriptive Statistics](#data-exploration--descriptive-statistics)
+* [Boxplot](#boxplot)
+* [Outliers](#outliers)
+* [Pairwise Scatter Plot](#pairwise-scatter-plot)
+* [Clean Data](#clean-data)
+* [Findings](#findings)
+* [Subset Selection](#subset-selection)
+* [Logistic Regression](#logistic-regression)
+* [Linear Discriminant Analysis](#linear-discriminant-analysis)
+* [Neural Network](#neural-network)
+* [Conclusion](#conclusion)
+* [References](#references)
+* [Appendix 1 : R Code](#appendix-1--r-code)
 
+Packages
+* pacman::p_load * data.table * fixest * BatchGetSymbols * finreportr * ggplot2 * lubridate * readxl * dplyr * tidyverse * extrafont * ggthemes * RColorBrewer * scales
 
-
-
-
-
-
-
-
- 
-1.0	Introduction
+## Introduction
 This analysis examines the predictive accuracy of five advanced analytics and machine learning (ML) algorithms on the publicly available and popular ‘Breast Cancer Wisconsin (Diagnostic)’ dataset. Models will be developed using Logistic Regression, Discriminant Analysis, Ensemble, Support Vector Machines (SVM) and Neural Network. The dataset developed consists of features from digitized images taken from real life tests on breast mass using Fine Needle Aspiration (FNA) and are descriptive characteristics of cell nuclei existing in the image. The dataset partitioned into Train/Test dataset with 80/20% partitioning. Results show high accuracy with Neural Network 97% and linear discriminant analysis 96.5% but the other models fell short of expectations for the prediction with logistic regression results at 61%.
 
 2.0	Literature Review
