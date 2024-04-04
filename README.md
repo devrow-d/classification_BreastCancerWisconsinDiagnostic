@@ -1,6 +1,7 @@
 # Classification - Breast Cancer Wisconsin Diagnostic
 
-Supervised machine learning project to predict cancer diagnosis using the popular Breast Cancer Wisconsin dataset
+Supervised machine learning project to predict cancer diagnosis using the popular Breast Cancer Wisconsin dataset utilising
+subset selection, logistic regression, linear discriminant analysis, ensembles, support vector machines and neural networks.
 
 Contents
 * [Introduction](#introduction)
