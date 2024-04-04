@@ -27,7 +27,7 @@ Contents
 * [Appendix 1 : R Code](#appendix-1--r-code)
 
 Packages
-* pacman::p_load * data.table * fixest * BatchGetSymbols * finreportr * ggplot2 * lubridate * readxl * dplyr * tidyverse * extrafont * ggthemes * RColorBrewer * scales
+* caret * e1071 * pacman::p_load * data.table * fixest * BatchGetSymbols * finreportr * ggplot2 * lubridate * readxl * dplyr * tidyverse * extrafont * ggthemes * RColorBrewer * scales
 
 ## Introduction
 This analysis examines the predictive accuracy of five advanced analytics and machine learning (ML) algorithms on the publicly available and popular ‘Breast Cancer Wisconsin (Diagnostic)’ dataset. Models will be developed using Logistic Regression, Discriminant Analysis, Ensemble, Support Vector Machines (SVM) and Neural Network. The dataset developed consists of features from digitized images taken from real life tests on breast mass using Fine Needle Aspiration (FNA) and are descriptive characteristics of cell nuclei existing in the image. The dataset partitioned into Train/Test dataset with 80/20% partitioning. Results show high accuracy with Neural Network 97% and linear discriminant analysis 96.5% but the other models fell short of expectations for the prediction with logistic regression results at 61%.
