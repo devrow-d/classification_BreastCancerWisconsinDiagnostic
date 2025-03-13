@@ -62,9 +62,6 @@ Discriminant functions can be roughly categorised into three classes:
 3.	Probability-based
 Pioneered by Fisher in 1930’s distance-based were the earliest and often referred to as Fisher Linear Discriminant Analysis (LDA). Bayesian has a decision-theoretic foundation and came later. And thirdly, probability-based arguably most standard approach and estimates the Bayes rule. Bayes rule being optimal a decent classifier should interpret a satisfactory approximation.
 It is used in medical applications to classify a patient’s disease status based on various parameters and treatments being undertaken by the patient. It can assist medical experts with a more accurate course of treatment. It will be used here to try to accurately identify the disease status of cancer patients based on features compute from finite needle aspiration (FNA) data.
-
-
-
  
 ####	Ensemble
 The ensemble idea is combining a collection of simpler model strengths. Various classification ensemble methods include Bagging, Random Forests and Boosting. 
@@ -103,7 +100,6 @@ As an extremely effective way to visualise the data boxplots have the ability to
  
 ####	Outliers
 The table below highlights the outliers existing the ‘_mean’ variables within the dataset, individually there are not high quantities though these should be converted to NA and observations kept. This will reduce their impact on the model.
- 
 
 ####	Pairwise Scatter Plot
 The figures below illustrate correlations in pairwise fashion between the features radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean, concave.points_mean, symmetry_mean, fractal_dimension_mean from the dataset. It is very visible from the plots that some data are highly correlated which is a cause for concern due to multicollinearity in the data.
