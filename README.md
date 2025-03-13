@@ -178,17 +178,27 @@ The development of modelling medical predictions like this can alleviate a major
  
 ##	References
 Cancer Research UK (2022). Breast cancer incidence (invasive) statistics [website]. Accessed by: https://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/breast-cancer/incidence-invasive#ref- (Accessed May 2022)
+
 Clarke, B. S., Fokoué, E. and Zhang, H. H. (2009) Principles and theory for data mining and machine learning. Springer (Springer series in statistics). Available at: https://search.ebscohost.com/login.aspx?direct=true&db=cat02616a&AN=qub.b16601725&site=eds-live&scope=site (Accessed: 15 May 2022).
+
 Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
 Furey, T.S., Cristianini, N., Duffy, N., Bednarski, D.W., Schummer, M. and Haussler, D., 2000. Support vector machine classification and validation of cancer tissue samples using microarray expression data. Bioinformatics, 16(10), pp.906-914.
+
 Hardesty, L (2017). Explained: Neural Networks [website]. Accessed by: https://news.mit.edu/2017/explained-neural-networks-deep-learning-0414 (Accessed May 2022)
 IBM (2020). Neural Networks [website]. Accessed by: https://www.ibm.com/cloud/learn/neural-networks (Accessed May 2022)
+
 James, G. et al. (2014) An introduction to statistical learning : with applications in R. Springer (Springer texts in statistics). Available at: https://search.ebscohost.com/login.aspx?direct=true&db=cat02616a&AN=qub.b19003845&site=eds-live&scope=site (Accessed: 15 May 2022).
+
 Kourou, K., Exarchos, T.P., Exarchos, K.P., Karamouzis, M.V. and Fotiadis, D.I., 2015. Machine learning applications in cancer prognosis and prediction. Computational and structural biotechnology journal, 13, pp.8-17.
+
 Lu, M., Fan, Z., Xu, B., Chen, L., Zheng, X., Li, J., Znati, T., Mi, Q. and Jiang, J., 2020. Using machine learning to predict ovarian cancer. International Journal of Medical Informatics, 141, p.104195.
+
 Park, K., Ali, A., Kim, D., An, Y., Kim, M. and Shin, H., 2013. Robust predictive model for evaluating breast cancer survivability. Engineering Applications of Artificial Intelligence, 26(9), pp.2194-2205.
+
 Rosado, P., Lequerica-Fernández, P., Villallaín, L., Peña, I., Sanchez-Lasheras, F. and De Vicente, J.C., 2013. Survival model in oral squamous cell carcinoma based on clinicopathological parameters, molecular markers and support vector machines. Expert systems with applications, 40(12), pp.4770-4776.
+
 Trevor Hastie, Robert Tibshirani and Jerome Friedman (2009) The Elements of Statistical Learning : Data Mining, Inference, and Prediction, Second Edition. New York: Springer (Springer Series in Statistics). Available at: https://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=277008&site=eds-live&scope=site (Accessed: 15 May 2022).
+
 WHO (2022). Cancer [website]. Accessed by: https://www.who.int/health-topics/cancer#tab=tab_1 (Accessed May 2022)
 
 
